@@ -35,7 +35,7 @@
     margin: 0 auto 0;
 }
 
-.tasks-list__input {
+.input-text {
     width: 56%;
     display: inline-block;
     flex-grow: 1;
@@ -47,7 +47,7 @@
   flex-grow: 1;
 }
 
-.task-row-wrapper {
+.add-section__wrapper {
     display: flex;
 }
 
@@ -117,7 +117,7 @@
     margin: 0 0 20px;
 }
 
-.input#new-task {
+.input#add-section__new-task {
     width: 318px;
 }
 
