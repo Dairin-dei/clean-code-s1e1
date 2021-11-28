@@ -19,7 +19,7 @@ var completedTasksHolder=document.getElementById("completed-tasks");//completed-
 var createNewTaskElement=function(taskString){
 
     var listItem=document.createElement("li");
-    listItem.classList = 'tasks-list__task';
+    listItem.className = 'tasks-list__task';
 
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
@@ -35,11 +35,11 @@ var createNewTaskElement=function(taskString){
     var deleteButtonImg=document.createElement("img");//delete button image
 
     label.innerText=taskString;
-    label.classList='tasks-list__label label';
+    label.className='tasks-list__label label';
 
     //Each elements needs appending
     checkBox.type="checkbox";
-    checkBox.classList = 'input input-checkbox';
+    checkBox.className = 'input input-checkbox';
 
     editInput.type="text";
     editInput.className="tasks-list__input input input-text";
@@ -49,6 +49,7 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="tasks-list__button button button_delete";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.className="img img-remove";
     deleteButton.appendChild(deleteButtonImg);
 
 
